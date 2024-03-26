@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+#customerName {
+    margin-bottom: 25px;
+}
+
+#queueList {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    display: flex; /* เพิ่ม display: flex เพื่อให้อยู่ในแถวแนวนอน */
+    align-items: center; /* จัดให้อยู่ตรงกลางตามแนวตั้ง */
+}
+
+#queueList h3 {
+    margin-bottom: 10px; /* ระยะห่างข้างล่างของ <h3> */
+}
+
+#queueList p {
+    margin: 0;
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    background-color: #44cea2;
+    padding: 20px; /* เพิ่มขนาดของ padding เพื่อให้วงกลมมีขนาดเล็กหน่อย */
+    display: inline-block; /* ให้กล่องพื้นหลังเป็นวงกลมตามขนาดของข้อความ */
+    margin-right: 10px;
+    text-align: center; /* จัดให้ข้อความอยู่ตรงกลางของวงกลม */
+    line-height: 2.5; /* สัดส่วนของข้อความในวงกลม */
+    margin-bottom: 10px; /* ระยะห่างข้างล่างของ <p> */
+}
+
+/* เพิ่มสไตล์ใน CSS เพื่อให้ปุ่มมีกรอบและเปลี่ยนสี */
+#enqueueBtn,
+#dequeueBtn {
+    padding: 10px 20px;
+    border: 2px solid #b64424; /* สีกรอบ */
+    background-color: #b64424; /* สีพื้นหลัง */
+    color: #0b0b0b; /* สีข้อความ */
+    cursor: pointer;
+    border-radius: 5px; /* มุมของกรอบ */
+    margin-right: 10px; /* ระยะห่างจากปุ่มอื่น ๆ */
+}
+
+#enqueueBtn:hover,
+#dequeueBtn:hover {
+    background-color: #d6978a; /* สีพื้นหลังเมื่อ hover */
+    border-color: #d6978a; /* สีกรอบเมื่อ hover */
+}
